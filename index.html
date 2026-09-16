@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montego Bay United FC - Official Boot Sizing Portal</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        mbufc: {
+                            red: '#D32F2F',
+                            redDark: '#9A0007',
+                            redLight: '#FF6659',
+                            green: '#0F382C',
+                            greenDark: '#071F18',
+                            greenLight: '#1B5E4B',
+                            gold: '#FFD700',
+                            goldHover: '#E6C200',
+                            dark: '#0B0F12',
+                            darkCard: '#131A20'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B0F12;
+            color: #F1F5F9;
+        }
+        .mbufc-glass {
+            background: rgba(19, 26, 32, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(211, 47, 47, 0.2);
+        }
+        .mbufc-card {
+            background: #131A20;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .mbufc-stripe {
+            background: repeating-linear-gradient(
+                -45deg,
+                #D32F2F,
+                #D32F2F 15px,
+                #0F382C 15px,
+                #0F382C 30px
+            );
+        }
+        .mbufc-gold-gradient {
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0B0F12;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #0F382C;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #D32F2F;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col font-sans antialiased selection:bg-mbufc-red selection:text-white">
+
+    <!-- Top Header -->
+    <header class="bg-mbufc-darkCard border-b border-mbufc-red/30 sticky top-0 z-50 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Crest & Title -->
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                    <!-- SVG MBUFC Official Logo Badge -->
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0">
+                        <svg viewBox="0 0 500 500" class="w-full h-full drop-shadow-md">
+                            <!-- Outer Red Circle -->
+                            <circle cx="250" cy="250" r="230" fill="#D32F2F" stroke="#0F382C" stroke-width="12"/>
+                            <!-- White Inner Ring -->
+                            <circle cx="250" cy="250" r="180" fill="#FFFFFF" />
+                            <!-- Circular Text MBUFC -->
+                            <path id="textPath" d="M 105,250 A 145,145 0 1,1 395,250" fill="none"/>
+                            <text font-family="Montserrat" font-weight="900" font-size="32" fill="#FFFFFF" letter-spacing="3">
+                                <textPath href="#textPath" startOffset="50%" text-anchor="middle">MONTEGO BAY UNITED FC</textPath>
+                            </text>
+                            <!-- 1972 Text -->
+                            <text x="250" y="420" font-family="Montserrat" font-weight="900" font-size="34" fill="#FFFFFF" text-anchor="middle">1972</text>
+                            <!-- Inner Forest Green Shield -->
+                            <path d="M 170,150 L 330,150 L 330,280 C 330,340 250,380 250,380 C 250,380 170,340 170,280 Z" fill="#0F382C" stroke="#FFFFFF" stroke-width="6"/>
+                            <!-- Palm Trees Sketch -->
+                            <path d="M 235,340 Q 230,270 200,220 M 200,220 Q 180,200 160,210 M 200,220 Q 180,225 170,240 M 200,220 Q 220,200 230,210" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round"/>
+                            <path d="M 265,340 Q 270,280 290,240 M 290,240 Q 310,220 330,230 M 290,240 Q 310,245 320,260 M 290,240 Q 270,220 260,230" stroke="#FFFFFF" stroke-width="5" fill="none" stroke-linecap="round"/>
+                            <!-- Birds in Sky -->
+                            <path d="M 270,180 Q 280,170 290,180 Q 300,170 310,180" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+                            <path d="M 220,170 Q 230,160 240,170 Q 250,160 260,170" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="font-display font-black text-lg sm:text-2xl uppercase tracking-wider text-white flex items-center gap-2 leading-none">
+                            Montego Bay <span class="text-mbufc-red">United FC</span>
+                        </h1>
+                        <p class="text-[11px] sm:text-xs text-mbufc-gold font-semibold tracking-widest uppercase mt-0.5">
+                            The Green & Red Army • Est. 1972 • WesPow Park
+                        </p>
+                    </div>
+                </div>
+
+                <!-- View Switcher Tabs -->
+                <nav class="flex items-center space-x-1 sm:space-x-2 bg-mbufc-dark/80 p-1.5 rounded-xl border border-white/10">
+                    <button id="nav-player" onclick="switchTab('player')" class="flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 bg-mbufc-red text-white shadow-lg shadow-mbufc-red/40">
+                        <i data-lucide="footprints" class="w-4 h-4"></i>
+                        <span class="hidden sm:inline">Player Boot Form</span>
+                        <span class="sm:hidden">Player</span>
+                    </button>
+                    <button id="nav-coach" onclick="switchTab('coach')" class="flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 text-slate-300 hover:text-white hover:bg-white/5 relative">
+                        <i data-lucide="shield-check" class="w-4 h-4 text-mbufc-gold"></i>
+                        <span class="hidden sm:inline">Kit Room Dashboard</span>
+                        <span class="sm:hidden">Kit Room</span>
+                        <span id="badge-count" class="bg-mbufc-gold text-slate-950 text-[10px] font-black px-1.5 py-0.5 rounded-full ml-1 min-w-[18px] text-center">0</span>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- ================= PLAYER VIEW SECTION ================= -->
+        <section id="view-player" class="space-y-8 transition-opacity duration-300">
+            
+            <!-- Hero Banner -->
+            <div class="relative rounded-2xl overflow-hidden bg-mbufc-darkCard border border-mbufc-red/30 p-6 sm:p-10 shadow-2xl">
+                <div class="absolute inset-0 opacity-20 mbufc-stripe"></div>
+                <div class="relative z-10 max-w-3xl">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-mbufc-green text-mbufc-gold border border-mbufc-gold/30 mb-3 uppercase tracking-wider">
+                        <i data-lucide="zap" class="w-3.5 h-3.5 mr-1.5 text-mbufc-gold"></i> Official 2026/27 Gear Portal
+                    </div>
+                    <h2 class="font-display text-3xl sm:text-4xl font-black text-white tracking-tight mb-2 uppercase">
+                        Select Your Matchday Cleats
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        Specify your preferred boot specifications, sizing, soleplate stud preferences, and paste direct purchase links for the MBUFC Equipment Manager to order for your upcoming fixtures.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Form & Live Equipment Pass Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Player Form (7 Cols on LG) -->
+                <form id="cleat-form" class="lg:col-span-7 bg-mbufc-darkCard rounded-2xl p-6 sm:p-8 border border-white/10 shadow-xl space-y-8">
+                    
+                    <!-- Section 1: Player & Squad Information -->
+                    <div>
+                        <div class="flex items-center space-x-2 border-b border-white/10 pb-3 mb-5">
+                            <div class="w-7 h-7 rounded-lg bg-mbufc-red/20 text-mbufc-red border border-mbufc-red/30 flex items-center justify-center font-bold text-sm">1</div>
+                            <h3 class="text-lg font-display font-bold text-white uppercase tracking-wider">Player & Squad Details</h3>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-12 gap-4">
+                            <!-- Full Name -->
+                            <div class="sm:col-span-6">
+                                <label for="player-name" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+                                    Player Full Name <span class="text-mbufc-red">*</span>
+                                </label>
+                                <div class="relative">
+                                    <input type="text" id="player-name" required placeholder="e.g. Jourdaine Fletcher" 
+                                           class="w-full pl-10 pr-4 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:outline-none focus:ring-2 focus:ring-mbufc-red focus:border-transparent transition-all">
+                                    <i data-lucide="user" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3"></i>
+                                </div>
+                            </div>
+
+                            <!-- Jersey Number -->
+                            <div class="sm:col-span-3">
+                                <label for="jersey-num" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+                                    Squad # <span class="text-mbufc-red">*</span>
+                                </label>
+                                <div class="relative">
+                                    <input type="number" id="jersey-num" required min="1" max="99" placeholder="10" 
+                                           class="w-full pl-10 pr-3 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:outline-none focus:ring-2 focus:ring-mbufc-red focus:border-transparent transition-all">
+                                    <i data-lucide="hash" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3"></i>
+                                </div>
+                            </div>
+
+                            <!-- Squad Division / Team Tier -->
+                            <div class="sm:col-span-3">
+                                <label for="squad-tier" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+                                    Squad Tier <span class="text-mbufc-red">*</span>
+                                </label>
+                                <select id="squad-tier" required class="w-full px-3 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:outline-none focus:ring-2 focus:ring-mbufc-red focus:border-transparent transition-all">
+                                    <option value="First Team" selected>First Team</option>
+                                    <option value="Reserve Team">Reserve Team</option>
+                                    <option value="Under 20s">Under 20s</option>
+                                    <option value="Academy / Youth">Academy / Youth</option>
+                                    <option value="Coaching Staff">Coaching Staff</option>
+                                </select>
+                            </div>
+
+                            <!-- Position -->
+                            <div class="sm:col-span-12">
+                                <label for="player-position" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+                                    Primary Position <span class="text-mbufc-red">*</span>
+                                </label>
+                                <select id="player-position" required class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:outline-none focus:ring-2 focus:ring-mbufc-red focus:border-transparent transition-all">
+                                    <option value="" disabled selected>Select Position...</option>
+                                    <option value="Striker / Center Forward">Striker / Center Forward</option>
+                                    <option value="Winger / Wide Attacker">Winger / Wide Attacker</option>
+                                    <option value="Attacking Midfielder">Attacking Midfielder</option>
+                                    <option value="Central Midfielder">Central Midfielder</option>
+                                    <option value="Defensive Midfielder">Defensive Midfielder</option>
+                                    <option value="Full Back / Wing Back">Full Back / Wing Back</option>
+                                    <option value="Center Back">Center Back</option>
+                                    <option value="Goalkeeper">Goalkeeper</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Boot & Surface Specifications -->
+                    <div>
+                        <div class="flex items-center space-x-2 border-b border-white/10 pb-3 mb-5">
+                            <div class="w-7 h-7 rounded-lg bg-mbufc-red/20 text-mbufc-red border border-mbufc-red/30 flex items-center justify-center font-bold text-sm">2</div>
+                            <h3 class="text-lg font-display font-bold text-white uppercase tracking-wider">Footwear & Stud Specs</h3>
+                        </div>
+
+                        <!-- Preferred Brand Selection -->
+                        <div class="mb-5">
+                            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">
+                                Preferred Boot Brand <span class="text-mbufc-red">*</span>
+                            </label>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3" id="brand-selector-group">
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="cleat-brand" value="Nike" class="peer sr-only" checked>
+                                    <div class="p-3 bg-slate-900 border border-slate-700 rounded-xl text-center transition-all peer-checked:border-mbufc-red peer-checked:bg-mbufc-red/10 peer-checked:text-white hover:border-slate-500">
+                                        <div class="font-bold text-sm text-white">Nike</div>
+                                        <div class="text-[11px] text-slate-400">Mercurial / Phantom</div>
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="cleat-brand" value="Adidas" class="peer sr-only">
+                                    <div class="p-3 bg-slate-900 border border-slate-700 rounded-xl text-center transition-all peer-checked:border-mbufc-red peer-checked:bg-mbufc-red/10 peer-checked:text-white hover:border-slate-500">
+                                        <div class="font-bold text-sm text-white">Adidas</div>
+                                        <div class="text-[11px] text-slate-400">Predator / F50</div>
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="cleat-brand" value="Puma" class="peer sr-only">
+                                    <div class="p-3 bg-slate-900 border border-slate-700 rounded-xl text-center transition-all peer-checked:border-mbufc-red peer-checked:bg-mbufc-red/10 peer-checked:text-white hover:border-slate-500">
+                                        <div class="font-bold text-sm text-white">Puma</div>
+                                        <div class="text-[11px] text-slate-400">Future / Ultra</div>
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="cleat-brand" value="Mizuno" class="peer sr-only">
+                                    <div class="p-3 bg-slate-900 border border-slate-700 rounded-xl text-center transition-all peer-checked:border-mbufc-red peer-checked:bg-mbufc-red/10 peer-checked:text-white hover:border-slate-500">
+                                        <div class="font-bold text-sm text-white">Mizuno</div>
+                                        <div class="text-[11px] text-slate-400">Morelia Neo</div>
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="cleat-brand" value="Under Armour" class="peer sr-only">
+                                    <div class="p-3 bg-slate-900 border border-slate-700 rounded-xl text-center transition-all peer-checked:border-mbufc-red peer-checked:bg-mbufc-red/10 peer-checked:text-white hover:border-slate-500">
+                                        <div class="font-bold text-sm text-white">Under Armour</div>
+                                        <div class="text-[11px] text-slate-400">Magnetico</div>
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="cleat-brand" value="New Balance" class="peer sr-only">
+                                    <div class="p-3 bg-slate-900 border border-slate-700 rounded-xl text-center transition-all peer-checked:border-mbufc-red peer-checked:bg-mbufc-red/10 peer-checked:text-white hover:border-slate-500">
+                                        <div class="font-bold text-sm text-white">New Balance</div>
+                                        <div class="text-[11px] text-slate-400">Furon / Tekela</div>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Size Dropdown (Dual UK/US) & Soleplate Surface -->
+                        <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 mb-5">
+                            
+                            <!-- Boot Size -->
+                            <div class="sm:col-span-6">
+                                <label for="cleat-size" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+                                    Shoe Size (UK / US) <span class="text-mbufc-red">*</span>
+                                </label>
+                                <select id="cleat-size" required class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:outline-none focus:ring-2 focus:ring-mbufc-red focus:border-transparent transition-all">
+                                    <option value="" disabled>Select shoe size...</option>
+                                    <option value="UK 5 font / US 6.0">UK 5 font / US 6.0</option>
+                                    <option value="UK 5.5 / US 6.5">UK 5.5 / US 6.5</option>
+                                    <option value="UK 6.0 / US 7.0">UK 6.0 / US 7.0</option>
+                                    <option value="UK 6.5 / US 7.5">UK 6.5 / US 7.5</option>
+                                    <option value="UK 7.0 / US 8.0">UK 7.0 / US 8.0</option>
+                                    <option value="UK 7.5 / US 8.5">UK 7.5 / US 8.5</option>
+                                    <option value="UK 8.0 / US 9.0">UK 8.0 / US 9.0</option>
+                                    <option value="UK 8.5 / US 9.5">UK 8.5 / US 9.5</option>
+                                    <option value="UK 9.0 / US 10.0" selected>UK 9.0 / US 10.0</option>
+                                    <option value="UK 9.5 / US 10.5">UK 9.5 / US 10.5</option>
+                                    <option value="UK 10.0 / US 11.0">UK 10.0 / US 11.0</option>
+                                    <option value="UK 10.5 / US 11.5">UK 10.5 / US 11.5</option>
+                                    <option value="UK 11.0 / US 12.0">UK 11.0 / US 12.0</option>
+                                    <option value="UK 12.0 / US 13.0">UK 12.0 / US 13.0</option>
+                                    <option value="UK 13.0 / US 14.0">UK 13.0 / US 14.0</option>
+                                </select>
+                            </div>
+
+                            <!-- Pitch Surface Type (FG, SG, AG, TF) -->
+                            <div class="sm:col-span-6">
+                                <label for="pitch-surface" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+                                    Soleplate / Surface Type <span class="text-mbufc-red">*</span>
+                                </label>
+                                <select id="pitch-surface" required class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:outline-none focus:ring-2 focus:ring-mbufc-red focus:border-transparent transition-all">
+                                    <option value="Firm Ground (FG - Grass)" selected>Firm Ground (FG - Natural Grass)</option>
+                                    <option value="Soft Ground (SG - Wet/Mud)">Soft Ground (SG - Metal Studs)</option>
+                                    <option value="Artificial Grass (AG / 3G / 4G)">Artificial Grass (AG / 3G Turf)</option>
+                                    <option value="Turf / Astro (TF)">Turf / Indoor Astro (TF)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Direct Purchase Link & Photo Picker -->
+                        <div class="grid grid-cols-1 sm:grid-cols-12 gap-4 mb-5">
+                            
+                            <!-- Direct Store URL -->
+                            <div class="sm:col-span-7">
+                                <label for="product-url" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+                                    Direct Product Order Link
+                                </label>
+                                <div class="relative">
+                                    <input type="url" id="product-url" placeholder="https://www.prodirectsport.com/soccer/p/..." 
+                                           class="w-full pl-10 pr-3 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:outline-none focus:ring-2 focus:ring-mbufc-red focus:border-transparent transition-all">
+                                    <i data-lucide="link-2" class="w-4 h-4 text-slate-400 absolute left-3.5 top-3"></i>
+                                </div>
+                                <span class="text-[10px] text-slate-400 mt-1 block">Paste link from ProDirect, Nike, SportsDirect, etc.</span>
+                            </div>
+
+                            <!-- Photo Upload -->
+                            <div class="sm:col-span-5">
+                                <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+                                    Upload Boot Image
+                                </label>
+                                <div class="flex items-center space-x-2">
+                                    <label class="flex-grow cursor-pointer flex items-center justify-center space-x-2 py-2.5 px-3 bg-slate-900 border border-slate-700 hover:border-slate-500 rounded-xl text-slate-300 text-xs font-bold transition-all">
+                                        <i data-lucide="image" class="w-4 h-4 text-mbufc-gold"></i>
+                                        <span id="file-label-text">Select Image...</span>
+                                        <input type="file" id="cleat-image-file" accept="image/*" class="hidden">
+                                    </label>
+                                    <button type="button" id="clear-image-btn" onclick="clearSelectedImage()" class="hidden text-xs text-mbufc-red font-bold p-2 hover:underline">
+                                        Remove
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fitting Notes -->
+                        <div>
+                            <label for="order-notes" class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1.5">
+                                Fitting Notes & High-Cut / Sock Preferences
+                            </label>
+                            <textarea id="order-notes" rows="2" placeholder="e.g. Prefer high-top dynamic collar, wide foot fitting, or extra ankle support." 
+                                      class="w-full px-3.5 py-2.5 bg-slate-900 border border-slate-700 rounded-xl text-white text-sm focus:outline-none focus:ring-2 focus:ring-mbufc-red focus:border-transparent transition-all"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-2">
+                        <button type="submit" id="submit-btn" class="w-full bg-gradient-to-r from-mbufc-red to-mbufc-redDark hover:from-mbufc-redLight hover:to-mbufc-red text-white font-black py-4 px-6 rounded-xl shadow-lg shadow-mbufc-red/30 transition-all duration-200 flex items-center justify-center space-x-2 text-base uppercase tracking-wider">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            <span>Submit Order To MBUFC Kit Room</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Live Digital Player Pass Card (5 Cols on LG) -->
+                <div class="lg:col-span-5 sticky top-28">
+                    <div class="bg-mbufc-darkCard rounded-2xl p-6 border-2 border-mbufc-red/40 shadow-2xl relative overflow-hidden">
+                        
+                        <!-- MBUFC Crest Watermark Background -->
+                        <div class="absolute -right-16 -bottom-16 w-56 h-56 opacity-5 pointer-events-none">
+                            <svg viewBox="0 0 500 500" class="w-full h-full fill-white">
+                                <circle cx="250" cy="250" r="230"/>
+                            </svg>
+                        </div>
+
+                        <!-- Card Badge Header -->
+                        <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-5">
+                            <div class="flex items-center space-x-2">
+                                <span class="w-3 h-3 rounded-full bg-mbufc-gold animate-pulse"></span>
+                                <h3 class="font-display font-black text-base text-white tracking-widest uppercase">MBUFC Equipment Pass</h3>
+                            </div>
+                            <span class="text-[10px] font-mono font-bold uppercase bg-mbufc-green text-mbufc-gold px-2.5 py-1 rounded-md border border-mbufc-gold/30">
+                                Season 2026/27
+                            </span>
+                        </div>
+
+                        <!-- Pass Main Content -->
+                        <div class="space-y-4">
+                            
+                            <!-- Player Header Badge -->
+                            <div class="bg-slate-900/90 rounded-xl p-4 border border-white/10 flex items-center justify-between">
+                                <div class="flex items-center space-x-3.5">
+                                    <!-- Squad Number Badge -->
+                                    <div class="w-12 h-12 bg-gradient-to-br from-mbufc-red to-mbufc-redDark rounded-xl flex items-center justify-center font-display font-black text-xl text-white shadow-lg border border-mbufc-gold/30 flex-shrink-0">
+                                        #<span id="preview-jersey">10</span>
+                                    </div>
+                                    <div>
+                                        <h4 id="preview-name" class="font-display font-extrabold text-base text-white truncate max-w-[160px] sm:max-w-[190px]">Jourdaine Fletcher</h4>
+                                        <p id="preview-position" class="text-xs text-mbufc-gold font-semibold">Striker / Center Forward</p>
+                                        <span id="preview-tier-badge" class="inline-block mt-0.5 text-[10px] uppercase font-bold text-slate-400">First Team</span>
+                                    </div>
+                                </div>
+                                <div id="preview-brand-badge" class="px-2.5 py-1 bg-mbufc-green text-white text-xs font-bold rounded-lg border border-mbufc-greenLight">
+                                    Nike
+                                </div>
+                            </div>
+
+                            <!-- Boot Specs -->
+                            <div class="grid grid-cols-2 gap-3">
+                                <div class="bg-slate-900/60 p-3 rounded-xl border border-white/5">
+                                    <span class="text-slate-400 text-[10px] uppercase block font-bold mb-0.5">Size Specification</span>
+                                    <div id="preview-size" class="font-display font-extrabold text-sm text-mbufc-gold">
+                                        UK 9.0 / US 10.0
+                                    </div>
+                                </div>
+                                <div class="bg-slate-900/60 p-3 rounded-xl border border-white/5">
+                                    <span class="text-slate-400 text-[10px] uppercase block font-bold mb-0.5">Surface Type</span>
+                                    <div id="preview-surface" class="font-semibold text-white text-xs truncate">
+                                        Firm Ground (FG)
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Image & Product Link Container -->
+                            <div class="bg-slate-900/60 p-3 rounded-xl border border-white/5 space-y-2">
+                                <span class="text-slate-400 text-[10px] uppercase block font-bold">Equipment Order Target</span>
+                                
+                                <div id="preview-img-container" class="hidden w-full h-32 bg-slate-950 rounded-lg overflow-hidden border border-slate-800">
+                                    <img id="preview-img" src="" alt="Boot Preview" class="w-full h-full object-cover">
+                                </div>
+
+                                <div class="flex items-center space-x-2 text-xs">
+                                    <i data-lucide="external-link" class="w-3.5 h-3.5 text-mbufc-gold flex-shrink-0"></i>
+                                    <span id="preview-link-text" class="truncate text-slate-400 italic">No direct order URL provided</span>
+                                </div>
+                            </div>
+
+                            <!-- Notes Preview -->
+                            <div class="bg-slate-900/60 p-3 rounded-xl border border-white/5">
+                                <span class="text-slate-400 text-[10px] uppercase block font-bold mb-1">Fitting Requests</span>
+                                <p id="preview-notes" class="text-xs text-slate-300 italic min-h-[32px]">No special fitting notes.</p>
+                            </div>
+
+                            <!-- Footer Crest Stamp -->
+                            <div class="flex items-center justify-between text-[10px] text-slate-400 pt-1 border-t border-white/5">
+                                <span>Montego Bay United FC • Kit Room</span>
+                                <span class="font-mono text-mbufc-gold">VERIFIED</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================= COACH / KIT ROOM DASHBOARD SECTION ================= -->
+        <section id="view-coach" class="space-y-8 hidden transition-opacity duration-300">
+            
+            <!-- Dashboard Title Header -->
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 bg-mbufc-darkCard p-6 rounded-2xl border border-mbufc-red/30 shadow-xl">
+                <div>
+                    <span class="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-extrabold bg-mbufc-green text-mbufc-gold mb-2 uppercase tracking-wider">
+                        <i data-lucide="shield" class="w-3 h-3 mr-1"></i> MBUFC Kit Room Manager
+                    </span>
+                    <h2 class="font-display text-2xl sm:text-3xl font-black text-white uppercase tracking-wider">
+                        Team Gear & Order Inventory
+                    </h2>
+                    <p class="text-xs sm:text-sm text-slate-400">
+                        Aggregated size totals, brand distributions, and direct purchase links for bulk team procurement.
+                    </p>
+                </div>
+
+                <!-- Export & Admin Actions -->
+                <div class="flex flex-wrap items-center gap-2">
+                    <button onclick="exportToCSV()" class="bg-mbufc-green hover:bg-mbufc-greenLight text-mbufc-gold text-xs sm:text-sm font-bold px-4 py-2.5 rounded-xl border border-mbufc-gold/30 shadow-md transition-all flex items-center space-x-1.5">
+                        <i data-lucide="download" class="w-4 h-4"></i>
+                        <span>Export CSV</span>
+                    </button>
+                    <button onclick="clearAllOrders()" class="bg-slate-900 hover:bg-mbufc-red/20 text-slate-300 hover:text-mbufc-red text-xs sm:text-sm font-bold px-3.5 py-2.5 rounded-xl border border-slate-700 transition-all flex items-center space-x-1.5">
+                        <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        <span>Reset Data</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dashboard Metric Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="bg-mbufc-darkCard p-5 rounded-2xl border border-white/10 shadow-lg flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-mbufc-red/20 text-mbufc-red rounded-xl flex items-center justify-center font-bold border border-mbufc-red/30">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Total Submissions</div>
+                        <div id="stat-total-orders" class="font-display font-black text-2xl text-white">0</div>
+                    </div>
+                </div>
+
+                <div class="bg-mbufc-darkCard p-5 rounded-2xl border border-white/10 shadow-lg flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-mbufc-green text-mbufc-gold rounded-xl flex items-center justify-center font-bold border border-mbufc-gold/30">
+                        <i data-lucide="award" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Top Brand</div>
+                        <div id="stat-top-brand" class="font-display font-black text-xl text-white">--</div>
+                    </div>
+                </div>
+
+                <div class="bg-mbufc-darkCard p-5 rounded-2xl border border-white/10 shadow-lg flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-amber-500/20 text-amber-400 rounded-xl flex items-center justify-center font-bold border border-amber-500/30">
+                        <i data-lucide="ruler" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Most Common Size</div>
+                        <div id="stat-top-size" class="font-display font-black text-sm text-white truncate max-w-[130px]">--</div>
+                    </div>
+                </div>
+
+                <div class="bg-mbufc-darkCard p-5 rounded-2xl border border-white/10 shadow-lg flex items-center space-x-4">
+                    <div class="w-12 h-12 bg-blue-500/20 text-blue-400 rounded-xl flex items-center justify-center font-bold border border-blue-500/30">
+                        <i data-lucide="link" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <div class="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Direct Order Links</div>
+                        <div id="stat-links-count" class="font-display font-black text-2xl text-white">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aggregated Size Inventory Matrix & Roster Table -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                
+                <!-- Size Matrix / Summary -->
+                <div class="lg:col-span-5 bg-mbufc-darkCard rounded-2xl p-6 border border-white/10 shadow-lg">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-white/10">
+                        <h3 class="font-display font-bold text-white text-base flex items-center gap-2 uppercase tracking-wider">
+                            <i data-lucide="shopping-bag" class="w-5 h-5 text-mbufc-gold"></i> Size Purchasing Matrix
+                        </h3>
+                        <span class="text-xs font-semibold text-slate-400">Kit Room Breakdown</span>
+                    </div>
+
+                    <p class="text-xs text-slate-400 mb-4">
+                        Aggregated counts by footwear size to streamline bulk supplier quotes.
+                    </p>
+
+                    <div id="aggregated-summary-container" class="space-y-3 max-h-[380px] overflow-y-auto pr-1">
+                        <!-- Dynamic content -->
+                    </div>
+                </div>
+
+                <!-- Detailed Roster Table -->
+                <div class="lg:col-span-7 bg-mbufc-darkCard rounded-2xl border border-white/10 shadow-lg overflow-hidden flex flex-col">
+                    <div class="p-6 pb-4 border-b border-white/10 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                        <h3 class="font-display font-bold text-white text-base flex items-center gap-2 uppercase tracking-wider">
+                            <i data-lucide="list" class="w-5 h-5 text-mbufc-red"></i> Player Submissions
+                        </h3>
+
+                        <!-- Search Box -->
+                        <div class="relative w-full sm:w-64">
+                            <input type="text" id="table-search" onkeyup="filterOrdersTable()" placeholder="Search player, squad #, brand..." 
+                                   class="w-full pl-9 pr-3 py-1.5 bg-slate-900 border border-slate-700 rounded-lg text-xs text-white focus:outline-none focus:ring-2 focus:ring-mbufc-red">
+                            <i data-lucide="search" class="w-3.5 h-3.5 text-slate-400 absolute left-3 top-2.5"></i>
+                        </div>
+                    </div>
+
+                    <!-- Table Responsive Container -->
+                    <div class="overflow-x-auto flex-grow">
+                        <table class="w-full text-left text-sm text-slate-300">
+                            <thead class="bg-slate-900 text-[11px] uppercase font-bold text-slate-400 border-b border-white/10">
+                                <tr>
+                                    <th class="px-4 py-3">Player / Squad</th>
+                                    <th class="px-3 py-3">Brand & Boot</th>
+                                    <th class="px-3 py-3">Size & Soleplate</th>
+                                    <th class="px-3 py-3">Direct Link</th>
+                                    <th class="px-3 py-3 text-right">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="orders-table-body" class="divide-y divide-white/5">
+                                <!-- Dynamic Rows -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast-notification" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-mbufc-darkCard text-white px-5 py-3.5 rounded-2xl shadow-2xl flex items-center space-x-3 border border-mbufc-red/40">
+            <div id="toast-icon-bg" class="w-8 h-8 rounded-xl bg-mbufc-green text-mbufc-gold flex items-center justify-center">
+                <i data-lucide="check" class="w-5 h-5"></i>
+            </div>
+            <div>
+                <h5 id="toast-title" class="text-sm font-bold text-white uppercase tracking-wider">Submitted</h5>
+                <p id="toast-msg" class="text-xs text-slate-300">Recorded in MBUFC database.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const STORAGE_KEY = 'mbufc_cleat_orders_2026';
+        let currentUploadedImageBase64 = '';
+
+        // Initial MBUFC sample roster data
+        const initialSampleData = [
+            {
+                id: 'mbufc-101',
+                name: 'Jourdaine Fletcher',
+                jersey: '10',
+                squadTier: 'First Team',
+                position: 'Striker / Center Forward',
+                brand: 'Nike',
+                size: 'UK 9.0 / US 10.0',
+                surface: 'Firm Ground (FG - Grass)',
+                url: 'https://www.prodirectsport.com/soccer/p/nike-air-zoom-mercurial-vapor-16-elite-fg',
+                image: 'https://images.unsplash.com/photo-1511556532299-8f662fc26c06?auto=format&fit=crop&w=400&q=80',
+                notes: 'Dynamic fit collar preference for matchday',
+                timestamp: new Date().toISOString()
+            },
+            {
+                id: 'mbufc-102',
+                name: 'Allan Ottey',
+                jersey: '07',
+                squadTier: 'First Team',
+                position: 'Winger / Wide Attacker',
+                brand: 'Adidas',
+                size: 'UK 8.5 / US 9.5',
+                surface: 'Firm Ground (FG - Grass)',
+                url: 'https://www.adidas.com/us/f50-elite-firm-ground-cleats',
+                image: '',
+                notes: 'Needs light boot for max acceleration',
+                timestamp: new Date().toISOString()
+            }
+        ];
+
+        function getOrders() {
+            const dataStr = localStorage.getItem(STORAGE_KEY);
+            if (!dataStr) {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(initialSampleData));
+                return initialSampleData;
+            }
+            try {
+                return JSON.parse(dataStr);
+            } catch (e) {
+                console.error("Error parsing local storage", e);
+                return [];
+            }
+        }
+
+        function saveOrders(orders) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(orders));
+            updateDashboard();
+        }
+
+        function switchTab(tab) {
+            const playerNav = document.getElementById('nav-player');
+            const coachNav = document.getElementById('nav-coach');
+            const playerView = document.getElementById('view-player');
+            const coachView = document.getElementById('view-coach');
+
+            if (tab === 'player') {
+                playerNav.className = "flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 bg-mbufc-red text-white shadow-lg shadow-mbufc-red/40";
+                coachNav.className = "flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 text-slate-300 hover:text-white hover:bg-white/5 relative";
+                
+                playerView.classList.remove('hidden');
+                coachView.classList.add('hidden');
+            } else {
+                coachNav.className = "flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 bg-mbufc-red text-white shadow-lg shadow-mbufc-red/40 relative";
+                playerNav.className = "flex items-center space-x-2 px-3 sm:px-4 py-2 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 text-slate-300 hover:text-white hover:bg-white/5";
+                
+                coachView.classList.remove('hidden');
+                playerView.classList.add('hidden');
+                updateDashboard();
+            }
+        }
+
+        function handleImageUpload(e) {
+            const file = e.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(evt) {
+                currentUploadedImageBase64 = evt.target.result;
+                document.getElementById('file-label-text').textContent = file.name.length > 14 ? file.name.substring(0, 11) + '...' : file.name;
+                document.getElementById('clear-image-btn').classList.remove('hidden');
+                updateLivePreview();
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function clearSelectedImage() {
+            document.getElementById('cleat-image-file').value = '';
+            currentUploadedImageBase64 = '';
+            document.getElementById('file-label-text').textContent = 'Select Image...';
+            document.getElementById('clear-image-btn').classList.add('hidden');
+            updateLivePreview();
+        }
+
+        function updateLivePreview() {
+            const nameInput = document.getElementById('player-name').value;
+            const jerseyInput = document.getElementById('jersey-num').value;
+            const squadTierInput = document.getElementById('squad-tier').value;
+            const posInput = document.getElementById('player-position').value;
+            const sizeInput = document.getElementById('cleat-size').value;
+            const surfaceInput = document.getElementById('pitch-surface').value;
+            const urlInput = document.getElementById('product-url').value.trim();
+            const notesInput = document.getElementById('order-notes').value;
+
+            const selectedBrand = document.querySelector('input[name="cleat-brand"]:checked')?.value || 'Nike';
+
+            document.getElementById('preview-name').textContent = nameInput.trim() ? nameInput : 'Jourdaine Fletcher';
+            document.getElementById('preview-jersey').textContent = jerseyInput !== '' ? jerseyInput : '10';
+            document.getElementById('preview-position').textContent = posInput ? posInput : 'Striker / Center Forward';
+            document.getElementById('preview-tier-badge').textContent = squadTierInput;
+            document.getElementById('preview-brand-badge').textContent = selectedBrand;
+            document.getElementById('preview-size').textContent = sizeInput ? sizeInput : 'UK 9.0 / US 10.0';
+            
+            // Surface short label
+            let surfaceShort = 'Firm Ground (FG)';
+            if (surfaceInput.includes('Soft Ground')) surfaceShort = 'Soft Ground (SG)';
+            if (surfaceInput.includes('Artificial')) surfaceShort = 'Artificial Turf (AG)';
+            if (surfaceInput.includes('Turf / Indoor')) surfaceShort = 'Turf Astro (TF)';
+            document.getElementById('preview-surface').textContent = surfaceShort;
+
+            // Product Link
+            const linkTextEl = document.getElementById('preview-link-text');
+            if (urlInput) {
+                linkTextEl.textContent = urlInput;
+                linkTextEl.className = "truncate text-mbufc-gold font-medium underline";
+            } else {
+                linkTextEl.textContent = "No direct order URL provided";
+                linkTextEl.className = "truncate text-slate-400 italic";
+            }
+
+            // Image Preview
+            const imgContainer = document.getElementById('preview-img-container');
+            const imgEl = document.getElementById('preview-img');
+            if (currentUploadedImageBase64) {
+                imgEl.src = currentUploadedImageBase64;
+                imgContainer.classList.remove('hidden');
+            } else {
+                imgContainer.classList.add('hidden');
+            }
+
+            document.getElementById('preview-notes').textContent = notesInput.trim() ? `"${notesInput.trim()}"` : 'No special fitting notes.';
+        }
+
+        document.getElementById('cleat-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('player-name').value.trim();
+            const jersey = document.getElementById('jersey-num').value.trim();
+            const squadTier = document.getElementById('squad-tier').value;
+            const position = document.getElementById('player-position').value;
+            const brand = document.querySelector('input[name="cleat-brand"]:checked').value;
+            const size = document.getElementById('cleat-size').value;
+            const surface = document.getElementById('pitch-surface').value;
+            const url = document.getElementById('product-url').value.trim();
+            const notes = document.getElementById('order-notes').value.trim();
+
+            const newOrder = {
+                id: 'mbufc-' + Date.now().toString().slice(-5),
+                name,
+                jersey,
+                squadTier,
+                position,
+                brand,
+                size,
+                surface,
+                url,
+                image: currentUploadedImageBase64,
+                notes,
+                timestamp: new Date().toISOString()
+            };
+
+            const currentOrders = getOrders();
+            currentOrders.unshift(newOrder);
+            saveOrders(currentOrders);
+
+            showToast('Submission Complete', `${name} (#${jersey}) boot request logged.`);
+
+            this.reset();
+            clearSelectedImage();
+            
+            document.querySelector('input[name="cleat-brand"][value="Nike"]').checked = true;
+            document.getElementById('squad-tier').value = "First Team";
+            document.getElementById('cleat-size').value = "UK 9.0 / US 10.0";
+            
+            updateLivePreview();
+        });
+
+        function updateDashboard() {
+            const orders = getOrders();
+            
+            document.getElementById('badge-count').textContent = orders.length;
+            document.getElementById('stat-total-orders').textContent = orders.length;
+
+            if (orders.length === 0) {
+                document.getElementById('stat-top-brand').textContent = '--';
+                document.getElementById('stat-top-size').textContent = '--';
+                document.getElementById('stat-links-count').textContent = '0';
+                renderAggregatedSummary([]);
+                renderOrdersTable([]);
+                return;
+            }
+
+            const brandCounts = {};
+            const sizeCounts = {};
+            let linksCount = 0;
+
+            orders.forEach(o => {
+                brandCounts[o.brand] = (brandCounts[o.brand] || 0) + 1;
+                sizeCounts[o.size] = (sizeCounts[o.size] || 0) + 1;
+                if (o.url) linksCount++;
+            });
+
+            const topBrand = Object.keys(brandCounts).reduce((a, b) => brandCounts[a] > brandCounts[b] ? a : b, '--');
+            document.getElementById('stat-top-brand').textContent = topBrand;
+
+            const topSize = Object.keys(sizeCounts).reduce((a, b) => sizeCounts[a] > sizeCounts[b] ? a : b, '--');
+            document.getElementById('stat-top-size').textContent = topSize;
+
+            document.getElementById('stat-links-count').textContent = linksCount;
+
+            renderAggregatedSummary(orders);
+            renderOrdersTable(orders);
+        }
+
+        function renderAggregatedSummary(orders) {
+            const container = document.getElementById('aggregated-summary-container');
+            container.innerHTML = '';
+
+            if (orders.length === 0) {
+                container.innerHTML = `
+                    <div class="text-center py-8 text-slate-500 text-xs">
+                        No player requests in database.
+                    </div>
+                `;
+                return;
+            }
+
+            const summaryMap = {}; 
+
+            orders.forEach(o => {
+                if (!summaryMap[o.size]) {
+                    summaryMap[o.size] = { total: 0, brands: {} };
+                }
+                summaryMap[o.size].total++;
+                summaryMap[o.size].brands[o.brand] = (summaryMap[o.size].brands[o.brand] || 0) + 1;
+            });
+
+            const sortedSizes = Object.keys(summaryMap);
+
+            sortedSizes.forEach(size => {
+                const item = summaryMap[size];
+                
+                let brandChipsHTML = '';
+                for (const [brandName, count] of Object.entries(item.brands)) {
+                    brandChipsHTML += `
+                        <span class="inline-flex items-center text-[10px] font-bold bg-slate-900 text-slate-300 px-2 py-0.5 rounded border border-slate-700 mr-1.5">
+                            ${brandName}: <strong class="ml-1 text-mbufc-gold">${count}</strong>
+                        </span>
+                    `;
+                }
+
+                const card = document.createElement('div');
+                card.className = "flex items-center justify-between p-3 bg-slate-900/80 border border-white/5 rounded-xl hover:border-mbufc-red/40 transition-all";
+                card.innerHTML = `
+                    <div>
+                        <div class="flex items-center space-x-2">
+                            <span class="font-bold text-xs text-white">${escapeHtml(size)}</span>
+                            <span class="text-[10px] font-black bg-mbufc-red text-white px-2 py-0.5 rounded-full">
+                                ${item.total} Pair${item.total > 1 ? 's' : ''}
+                            </span>
+                        </div>
+                        <div class="mt-1.5 flex flex-wrap gap-1">
+                            ${brandChipsHTML}
+                        </div>
+                    </div>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function renderOrdersTable(orders) {
+            const tbody = document.getElementById('orders-table-body');
+            tbody.innerHTML = '';
+
+            if (orders.length === 0) {
+                tbody.innerHTML = `
+                    <tr>
+                        <td colspan="5" class="text-center py-8 text-slate-500 text-xs">
+                            No MBUFC orders recorded.
+                        </td>
+                    </tr>
+                `;
+                return;
+            }
+
+            orders.forEach(order => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-900/60 transition-colors";
+
+                const imgThumb = order.image 
+                    ? `<img src="${order.image}" class="w-9 h-9 rounded-lg object-cover border border-slate-700 flex-shrink-0">` 
+                    : `<div class="w-9 h-9 rounded-lg bg-slate-900 text-slate-500 flex items-center justify-center border border-slate-800 flex-shrink-0"><i data-lucide="footprints" class="w-4 h-4 text-mbufc-red"></i></div>`;
+
+                const linkAction = order.url 
+                    ? `<div class="flex items-center space-x-1">
+                        <a href="${escapeHtml(order.url)}" target="_blank" class="inline-flex items-center space-x-1 text-xs text-mbufc-gold hover:underline font-bold bg-mbufc-green/40 px-2.5 py-1 rounded-lg border border-mbufc-gold/20">
+                            <span>Order</span>
+                            <i data-lucide="external-link" class="w-3 h-3"></i>
+                        </a>
+                        <button onclick="copyToClipboard('${escapeHtml(order.url)}')" title="Copy URL" class="p-1 text-slate-400 hover:text-white">
+                            <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                        </button>
+                       </div>` 
+                    : `<span class="text-xs text-slate-500 italic">No link</span>`;
+
+                tr.innerHTML = `
+                    <td class="px-4 py-3">
+                        <div class="flex items-center space-x-2.5">
+                            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-mbufc-red to-mbufc-redDark text-white font-display font-black text-xs flex items-center justify-center flex-shrink-0 shadow border border-mbufc-gold/20">
+                                #${order.jersey || '--'}
+                            </div>
+                            <div>
+                                <div class="font-bold text-white text-xs sm:text-sm">${escapeHtml(order.name)}</div>
+                                <div class="text-[10px] text-mbufc-gold font-semibold">${escapeHtml(order.squadTier)} • ${escapeHtml(order.position)}</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-3 py-3">
+                        <div class="flex items-center space-x-2">
+                            ${imgThumb}
+                            <div>
+                                <span class="inline-block px-2 py-0.5 bg-slate-900 text-white text-xs font-bold rounded border border-slate-700">
+                                    ${escapeHtml(order.brand)}
+                                </span>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="px-3 py-3">
+                        <div class="font-bold text-xs text-white">${escapeHtml(order.size)}</div>
+                        <div class="text-[10px] text-slate-400">${escapeHtml(order.surface)}</div>
+                    </td>
+                    <td class="px-3 py-3">
+                        ${linkAction}
+                    </td>
+                    <td class="px-3 py-3 text-right">
+                        <button onclick="deleteOrder('${order.id}')" title="Delete Order" class="p-1.5 text-slate-400 hover:text-mbufc-red hover:bg-mbufc-red/10 rounded-lg transition-all">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i>
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+        }
+
+        function copyToClipboard(text) {
+            const tempInput = document.createElement("input");
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            showToast('Copied', 'Store URL copied to clipboard.');
+        }
+
+        function filterOrdersTable() {
+            const query = document.getElementById('table-search').value.toLowerCase();
+            const allOrders = getOrders();
+            const filtered = allOrders.filter(o => 
+                o.name.toLowerCase().includes(query) || 
+                o.jersey.toString().includes(query) ||
+                o.squadTier.toLowerCase().includes(query) ||
+                o.brand.toLowerCase().includes(query)
+            );
+            renderOrdersTable(filtered);
+        }
+
+        function deleteOrder(id) {
+            let orders = getOrders();
+            orders = orders.filter(o => o.id !== id);
+            saveOrders(orders);
+            showToast('Removed', 'Order record deleted.', true);
+        }
+
+        function clearAllOrders() {
+            if (confirm("Are you sure you want to reset all Montego Bay United FC boot orders?")) {
+                localStorage.removeItem(STORAGE_KEY);
+                updateDashboard();
+                showToast('Reset Complete', 'Database cleared.', true);
+            }
+        }
+
+        function exportToCSV() {
+            const orders = getOrders();
+            if (orders.length === 0) {
+                alert("No order records available to export.");
+                return;
+            }
+
+            const headers = ["Order ID", "Player Name", "Squad #", "Squad Tier", "Position", "Brand", "Shoe Size", "Soleplate Surface", "Direct Order URL", "Notes", "Timestamp"];
+            const rows = orders.map(o => [
+                `"${o.id}"`,
+                `"${o.name.replace(/"/g, '""')}"`,
+                `"${o.jersey}"`,
+                `"${o.squadTier.replace(/"/g, '""')}"`,
+                `"${o.position.replace(/"/g, '""')}"`,
+                `"${o.brand}"`,
+                `"${o.size}"`,
+                `"${o.surface.replace(/"/g, '""')}"`,
+                `"${(o.url || '').replace(/"/g, '""')}"`,
+                `"${(o.notes || '').replace(/"/g, '""')}"`,
+                `"${o.timestamp}"`
+            ]);
+
+            const csvContent = "data:text/csv;charset=utf-8," + [headers.join(","), ...rows.map(e => e.join(","))].join("\n");
+            const encodedUri = encodeURI(csvContent);
+            
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", `MBUFC_Boot_Orders_${new Date().toISOString().slice(0,10)}.csv`);
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        function escapeHtml(str) {
+            if (!str) return '';
+            return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
+        }
+
+        function showToast(title, message, isWarning = false) {
+            const toast = document.getElementById('toast-notification');
+            const toastTitle = document.getElementById('toast-title');
+            const toastMsg = document.getElementById('toast-msg');
+            const iconBg = document.getElementById('toast-icon-bg');
+
+            toastTitle.textContent = title;
+            toastMsg.textContent = message;
+
+            if (isWarning) {
+                iconBg.className = "w-8 h-8 rounded-xl bg-amber-500/20 text-amber-400 flex items-center justify-center border border-amber-500/30";
+                iconBg.innerHTML = `<i data-lucide="alert-triangle" class="w-5 h-5"></i>`;
+            } else {
+                iconBg.className = "w-8 h-8 rounded-xl bg-mbufc-green text-mbufc-gold flex items-center justify-center border border-mbufc-gold/30";
+                iconBg.innerHTML = `<i data-lucide="check" class="w-5 h-5"></i>`;
+            }
+
+            if (window.lucide) lucide.createIcons();
+
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3500);
+        }
+
+        window.onload = function() {
+            const formInputs = [
+                'player-name', 'jersey-num', 'squad-tier', 'player-position', 
+                'cleat-size', 'pitch-surface', 'product-url', 'order-notes'
+            ];
+            
+            formInputs.forEach(id => {
+                const el = document.getElementById(id);
+                if (el) {
+                    el.addEventListener('input', updateLivePreview);
+                    el.addEventListener('change', updateLivePreview);
+                }
+            });
+
+            const imageInput = document.getElementById('cleat-image-file');
+            if (imageInput) {
+                imageInput.addEventListener('change', handleImageUpload);
+            }
+
+            document.querySelectorAll('input[name="cleat-brand"]').forEach(radio => {
+                radio.addEventListener('change', updateLivePreview);
+            });
+
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            updateLivePreview();
+            updateDashboard();
+        };
+    </script>
+</body>
+</html>
